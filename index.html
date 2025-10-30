@@ -2,142 +2,139 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Surya Kannan Origami</title>
     <link rel="icon" href="images/favicon.ico">
 
-    <title>Album example for Bootstrap</title>
-
-    <!-- Bootstrap core CSS -->
-   <!-- Latest compiled and minified CSS -->
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <!-- Custom styles for this template -->
-    <link href="album.css" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
 
   <body>
-
-    <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-8 py-4">
-            <h4 class="text-white">About</h4>
-            <p class="text-muted">I enjoy making modular origami. I draw inspiration from life and create it through paper! I mainly recycle paper that would have been discarded to save unnecessary waste and prove that art doesn't rely on perfection but innovation.</p>
-          </div>
+        <a class="navbar-brand fw-bold" href="#">Origami by Surya</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#gallery">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          </ul>
         </div>
       </div>
-      
-      <div class="navbar navbar-dark bg-dark">
-        <div class="container d-flex justify-content-between">
-          <a href="#" class="navbar-brand">Album</a>
-          
-        </div>
-      </div>
-    </header>
+    </nav>
 
-    <main role="main">
-
-      <section class="jumbotron text-center">
-        <div class="container">
-          <h1 class="jumbotron-heading">Surya Kannan</h1>
-          <p class="lead text-muted">Modular Origami Display</p>
-        </div>
-      </section>
-
-      <div class="album text-muted">
-        <div class="container">
-
-          <div class="row">
-            <div class="card">
-              <img src="images/bs.png" alt="image 2017" style="width:100%"  
-                   data-toggle="modal" data-target="#myModal">
-              <p class="card-text">This Swan took around 50 hours to make and assemble</p>
-            </div>
-            <div class="card">
-              <img src="images/bf.png" alt="image 2017" style="width:100%"  
-               data-toggle="modal" data-target="#myModal">
-              <p class="card-text">Around 5000 pieces were used.</p>
-            </div>
-            <div class="card">
-              <img src="images/bb.png" alt="image 2017" style="width:100%"
-                   data-toggle="modal" data-target="#myModal">
-              <p class="card-text">5 different colors of paper were joined to make this swan!</p>            
-            </div>
-             <div class="card">
-              <img src="images/sf.png" alt="image 2017" style="width:100%"  
-                   data-toggle="modal" data-target="#myModal">
-              <p class="card-text">One of the first designs of the 3D swan</p>
-            </div>
-            <div class="card">
-              <img src="images/st.png" alt="image 2017" style="width:100%"  
-               data-toggle="modal" data-target="#myModal">
-              <p class="card-text">This swan served as a basis for future designs that expanded upon its simplicity!</p>
-            </div>
-            <div class="card">
-              <img src="images/tf.png" alt="image 2017" style="width:100%"
-                   data-toggle="modal" data-target="#myModal">
-              <p class="card-text">One of the most recent projects I made. Completely recycled old schoolwork paper, using around 8000 pieces.</p>            
-            </div>
-            <div class="card">
-              <img src="images/of.png" alt="image 2017" style="width:100%"
-                   data-toggle="modal" data-target="#myModal">
-              <p class="card-text">Another variation of the base model that set a precedent for other models.</p>            
-            </div>
-            <div class="card">
-              <img src="images/os.png" alt="image 2017" style="width:100%"
-                   data-toggle="modal" data-target="#myModal">
-              <p class="card-text">I experimented with different colors in this model.</p>            
-            </div>
-            
-          </div>
-
-        </div>
-      </div>
-
-      
-      <div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-body">
-                <img class="img-responsive" src="" />
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-      
- 
-      
-       
- </main>
-
-    <footer class="text-muted">
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center text-center">
       <div class="container">
-        <p class="float-right">
-          <a href="#">Back to top</a>
+        <h1 class="display-4 fw-bold text-white">Surya Kannan</h1>
+        <p class="lead text-light mb-4">Modular Origami • Art from Paper and Patience</p>
+        <a href="#gallery" class="btn btn-outline-light btn-lg">View Gallery</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-5 bg-light text-center">
+      <div class="container">
+        <h2 class="fw-bold mb-3">About My Work</h2>
+        <p class="text-muted mx-auto" style="max-width: 700px;">
+          I create modular origami inspired by the beauty of everyday life. Most of my pieces are made 
+          from recycled paper, transforming discarded materials into intricate geometric art. My goal 
+          is to prove that creativity doesn’t rely on perfection — but on innovation, patience, and passion.
         </p>
-        
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="py-5">
+      <div class="container">
+        <h2 class="fw-bold text-center mb-5">Origami Gallery</h2>
+        <div class="row g-4">
+          <!-- Card Template -->
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm gallery-item">
+              <img src="images/bs.png" class="card-img-top" alt="Swan" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/bs.png" data-caption="This Swan took around 50 hours to make and assemble.">
+              <div class="card-body text-center">
+                <p class="card-text">This Swan took around 50 hours to make and assemble.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm gallery-item">
+              <img src="images/bf.png" class="card-img-top" alt="Swan 5000" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/bf.png" data-caption="Around 5000 pieces were used.">
+              <div class="card-body text-center">
+                <p class="card-text">Around 5000 pieces were used.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm gallery-item">
+              <img src="images/bb.png" class="card-img-top" alt="Colorful Swan" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/bb.png" data-caption="Five colors combined to form this elegant swan.">
+              <div class="card-body text-center">
+                <p class="card-text">Five colors combined to form this elegant swan.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add your other images below the same way -->
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm gallery-item">
+              <img src="images/sf.png" class="card-img-top" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/sf.png" data-caption="One of the first designs of the 3D swan.">
+              <div class="card-body text-center"><p class="card-text">One of the first designs of the 3D swan.</p></div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm gallery-item">
+              <img src="images/tf.png" class="card-img-top" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/tf.png" data-caption="Made entirely from recycled school paper — 8000 pieces strong!">
+              <div class="card-body text-center"><p class="card-text">Made entirely from recycled school paper — 8000 pieces strong!</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark border-0">
+          <div class="modal-body text-center">
+            <img src="" class="img-fluid rounded shadow" alt="Origami piece">
+            <p class="text-light mt-3" id="modalCaption"></p>
+          </div>
+          <div class="modal-footer border-0 justify-content-center">
+            <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-center text-light">
+      <div class="container">
+        <p class="mb-1">© 2025 Surya Kannan</p>
+        <p class="small text-muted mb-0">Created with patience and folded dreams.</p>
+        <a href="#" class="text-light small">Back to top ↑</a>
       </div>
     </footer>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-    $(document).ready(function () {
-            $('#myModal').on('show.bs.modal', function (e) {
-                var image = $(e.relatedTarget).attr('src');
-                $(".img-responsive").attr("src", image);
-            });
-    });
-    </script> 
+      const imageModal = document.getElementById('imageModal');
+      imageModal.addEventListener('show.bs.modal', event => {
+        const img = event.relatedTarget;
+        const modalImg = imageModal.querySelector('img');
+        const caption = imageModal.querySelector('#modalCaption');
+        modalImg.src = img.getAttribute('data-img');
+        caption.textContent = img.getAttribute('data-caption');
+      });
+    </script>
   </body>
 </html>
